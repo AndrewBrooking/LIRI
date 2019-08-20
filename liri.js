@@ -22,7 +22,7 @@ if (args.length <= 2) {
 const op = args[2].trim().toLowerCase();
 
 // Get input as a single string
-const input = args.slice(3).join(' ').trim().toLowerCase();
+const input = args.slice(3).join('+').trim().toLowerCase();
 
 // Perform random command or specified command
 if (op === "do-what-it-says") {
