@@ -13,7 +13,7 @@ function help() {
 
     // Info for 'concert-this' command
     console.log("concert-this [artist]");
-    console.log("Return: List of upcoming Locations and Dates");
+    console.log("Return: List of upcoming Venues, Locations, and Dates");
 
     console.log("");
     console.log("--------------------------------");
