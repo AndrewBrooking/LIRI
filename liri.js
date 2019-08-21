@@ -19,10 +19,9 @@ if (args.length <= 2) {
 }
 
 // Get operation to perform
-const op = args[2].trim().toLowerCase();
+let op = args[2].trim().toLowerCase();
 
-// Get input as a single string
-const input = args.slice(3).join('+').trim().toLowerCase();
+let input;
 
 // Perform random command or specified command
 if (op === "do-what-it-says") {
@@ -47,9 +46,14 @@ if (op === "do-what-it-says") {
         op = strArr[rnd].substr(0, splitIndex).trim();
         input = strArr[rnd].substr(splitIndex + 1).trim();
 
+        console.log(op + " " + input);
+
         liri(op, input);
     });
 } else {
+    // Get input as a single string
+    input = args.slice(3).join('+').trim().toLowerCase();
+
     liri(op, input);
 }
 
