@@ -5,7 +5,7 @@ function help() {
 
     // Info for 'movie-this' command
     console.log("movie-this [title]");
-    console.log("Return: Movie Title, Release Date, Rating, Runtime, Genre, Director, Actors, Plot, and IMDB ID");
+    console.log("Return: Movie Title, Release Year, Ratings, Country, Language, Plot, and Actors");
 
     console.log("");
     console.log("--------------------------------");
@@ -21,7 +21,7 @@ function help() {
 
     // Info for 'spotify-this-song' command
     console.log("spotify-this-song [title]");
-    console.log("Return: List of all songs with Title, Album, Artist, Track Length, and Spotify ID");
+    console.log("Return: List of all songs with Artist, Name, Album, and Spotify Link");
 
     console.log("");
     console.log("--------------------------------");
@@ -29,7 +29,7 @@ function help() {
 
     // Info for 'do-what-it-says' command
     console.log("do-what-it-says");
-    console.log("Return: Result of a random command")
+    console.log("Return: Result of a random command");
 
     console.log("");
     console.log("--------------------------------");

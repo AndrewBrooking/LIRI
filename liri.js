@@ -1,8 +1,5 @@
 require("dotenv").config();
 
-// Import fs
-const fs = require("fs");
-
 // Import modules
 let band = require("./modules/band.js")
 let movie = require("./modules/movie.js");
@@ -25,6 +22,9 @@ let input;
 
 // Perform random command or specified command
 if (op === "do-what-it-says") {
+    // Import fs
+    const fs = require("fs");
+
     // Read random.txt
     fs.readFile("random.txt", "utf8", (err, data) => {
 
@@ -37,7 +37,7 @@ if (op === "do-what-it-says") {
         const strArr = data.split("\n");
 
         // Create random number between 0 and length of strArr (exclusive)
-        const rnd = Math.round(Math.random() * strArr.length);
+        const rnd = Math.floor(Math.random() * strArr.length);
 
         // Get index number of first space to separate command from input
         const splitIndex = strArr[rnd].indexOf(" ");

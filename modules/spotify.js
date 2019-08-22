@@ -15,7 +15,7 @@ const spotify = new SpotifyAPI({
 function query(title) {
     // Check that title is not empty
     if (title) {
-        spotify.search({ type: 'track', query: title }).then(writeResults).catch(error.error);
+        spotify.search({ type: 'track', query: title }).then(writeResults).catch(error);
     } else {
         // Print error message
         console.log("The command 'spotify-this-song' requires one argument, none were passed.");

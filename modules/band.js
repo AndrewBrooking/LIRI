@@ -17,7 +17,7 @@ function query(artist) {
         let queryURL = `https://rest.bandsintown.com/artists/${artist}/events?app_id=codingbootcamp`;
 
         // Run axios query
-        axios.get(queryURL).then(writeResults).catch(error.error);
+        axios.get(queryURL).then(writeResults).catch(error);
     } else {
         // Print error message
         console.log("The command 'concert-this' requires one argument, none were passed.");

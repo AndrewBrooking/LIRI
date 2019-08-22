@@ -19,6 +19,4 @@ function error(err) {
       console.log(err.config);
 }
 
-module.exports = {
-    error: error
-};
+module.exports = error;
